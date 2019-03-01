@@ -85,7 +85,7 @@ handlers.hello = function (data, callback) {
 
 // Not found handler
 handlers.notFound = function (data, callback) {
-    callback(404);
+    callback(404, {message : "404 Not found"});
 }
 
 // Define a request router
